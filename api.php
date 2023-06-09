@@ -1,5 +1,7 @@
 <?php
     header('content-type:application/json');
+    header('Access-Control-Allow-Origin:*');
+
     if(isset($_REQUEST['number1'])){
         $number1=$_REQUEST['number1'];
     }else{
