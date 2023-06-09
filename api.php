@@ -1,7 +1,7 @@
 <?php
     header('content-type:application/json');
     header('Access-Control-Allow-Origin:*');
-
+    
     if(isset($_REQUEST['number1'])){
         $number1=$_REQUEST['number1'];
     }else{
@@ -12,8 +12,7 @@
     }else{
         $number2=0;
     }
-    //$multiplication=$number1*$number2;
-    //$responseArray=['multiplication'=>$multiplication,'people'=>[['name'=>'Abhishek','age'=>"35"],['name'=>'Chetana','age'=>"32"],['name'=>'Aadhvik','age'=>"4"]]];
+
     if($number1==$number2){
         $responseArray=[['name'=>'Abhishek','age'=>"35"],['name'=>'Chetana','age'=>"32"],['name'=>'Aadhvik','age'=>"4"]];
     }else if($number1>$number2){
